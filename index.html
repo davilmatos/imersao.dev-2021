@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Tabela de classificação</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Jogo do amor com tabela de pontuação</title>
+  </head>
+  <body>
+    <h2>
+      <fieldset>
+        <div>
+          <button class= "button-register1" onclick="openRegisterArea()">Registrar o jogador 1</button>
+        </div>
+        <div class="register-area1">
+          <p><input placeholder="Nome do primeiro jogador" id="input-name1">
+          <br> <input placeholder="Evento 1" id="p1-event1">
+          <input placeholder="Data 1" id="p1-date1">
+          <br> <input placeholder="Evento 2" id="p1-event2">
+          <input placeholder="Data 2" id="p1-date2">
+          <br> <input placeholder="Evento 3" id="p1-event3">
+          <input placeholder="Data 3" id="p1-date3"></p>
+          <button onclick="">Salvar</button>
+          <button onclick="">Cancelar</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <div class="register-area2">
+          <button onclick="register1">Registrar jogador 2</button>
+          <p><input placeholder="Nome do segundo jogador" id="input-name2">
+          <br> <input placeholder="Evento 1" id="p2-event1">
+          <input placeholder="Data 1" id="p2-date1">
+          <br> <input placeholder="Evento 2" id="p2-event2">
+          <input placeholder="Data 2" id="p2-date2">
+          <br> <input placeholder="Evento 3" id="p3-event3">
+          <input placeholder="Data 3" id="p3-date3"></p>
+          <button onclick="">Salvar</button>
+          <button onclick="">Cancelar</button>
+        </div>
+      </fieldset>
+    </h2>
+    <h2>Tabela de classificação</h2>
+    <button onclick="startPlay()">Começar</button>
+    <table style="width:100%">
+      <thead>
+        <tr>
+          <td>Nome</td>
+          <td>Partidas jogadas</td>
+          <td>Vitórias</td>
+          <td>Empates</td>
+          <td>Derrotas</td>
+          <td>Pontos</td>
+          <td>Ações</td>
+        </tr>
+       </thead>
+       <tbody id="table">
+       </tbody>
+    </table>
+   </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
