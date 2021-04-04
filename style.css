@@ -1,0 +1,144 @@
+body{
+  font-family: 'Roboto Mono',monospace;
+  text-align: center;
+  background-image: url("https://medialab.iscte-iul.pt/wp-content/uploads/original2.png");
+  background-size: cover;
+  background-color: #000000;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.container {
+  text-align: center;
+  padding: 20px
+}
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px
+}
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+.page-logo {
+  width: 150px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  opacity: .4;
+}
+.all-movies {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+}
+.alura-logo {
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: .4;
+}
+.movies-area {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+.movies-area span {
+  color: #ffffff;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size:  1.1em;
+  margin: 10px;
+  text-align: center;
+  
+  transition: all 0.5s;
+}
+.movies-area::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  /* top: 100%; */
+  background-color: #000000;
+  height: 80%;
+  width: 90%;
+  margin-right: 10px;
+  opacity: 0;
+  margin: 0 10px;
+  transition: all 0.5s;
+  text-align: center;
+}
+.year {
+  position: relative;
+  bottom: 80px;
+  opacity: 0;
+  text-align: center;
+}
+.year > span {
+  display: block;
+  text-align: center;
+}
+
+.year p {
+  color: #ffffff;
+  line-height: .5em;
+  text-align: center;
+}
+
+.movies-area:hover::before {
+  opacity: .7;
+  text-align: center;
+}
+.movies-area:hover span {
+  text-align: center;
+  opacity: 1;
+}
+.movies-area:hover .year  {
+  opacity: 1;
+  text-align: center;
+}
+
+.movies-area > img {
+  margin: 0 10px;
+  
+}
+
+.input-style {
+  width: 220px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.button-style {
+  border: 0;
+  color: #ffffff;
+  background: #DA1E26;
+  font-weight:bold;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 9px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.button-style:hover {
+    opacity:.8;
+  }
+
+.output-style {
+  color: white;
+  font-size: 18px;
+}
+
+.trailer-style {
+  display: block;
+  position: center;
+}
