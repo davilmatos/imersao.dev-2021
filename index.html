@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Jogo da Memória do Amor v2 (for 2 players)</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <head>
+    <title>Jogo da Memória do Amor</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Acerte as datas da sua história de amor e ganhe uma recompensa!</h2>
+      <div class="question-answer-area">
+        Para ganhar, acerte as datas até somar <output id="winner-points"></output> pontos. Ao zerar suas tentativas, game over!
+        <p>Quando ocorreu o evento abaixo? 
+        <br>Evento: <output id="event"></output></p>
+        <p>Digite aqui a data: <input id="answer-date" placeholder="DD/MM/AAAA" type="text">
+        <button id="submit" class="buttons" onclick="submitDate()">Enviar resposta!</button></div>
+      <div class="result-area">
+        Sua resposta está ... <output id="result"></output></p>
+        <p><button id="new-event" class="buttons" onclick="newEvent()">Gerar novo evento...</button></p>
+        <p>Tentativas restantes: <output id="chances-left"></output>
+        <br>Pontos acumulados: <output id="points"></output></p>
+        <p id="end-game" class="end-game"></p>
+        <button id="restart" onclick="restart()" class="buttons">Começar de novo...</button>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
